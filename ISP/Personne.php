@@ -1,33 +1,23 @@
 <?php
 
-
 namespace ISP;
-
-
-use DateTime;
 
 class Personne implements IPersonne
 {
 
-    public function getAge(): int
-    {
-        // TODO: Implement getAge() method.
-        return 0;
-    }
+    private $nom;
+    private $prenom;
+    private $tel;
+    private $dateDeNaissance;
+    private $age;
 
-    /**
-     * @return DateTime
-     * @throws \Exception
-     */
-    public function getDateDeNaissance(): DateTime
+    public function __construct($nom, $prenom, $tel, $dateDeNaissance, $age)
     {
-        // TODO: Implement getDateDeNaissance() method.
-        return new DateTime();
-    }
-
-    public function setDateDeNaissance(DateTime $dateDeNaissance): void
-    {
-        // TODO: Implement setDateDeNaissance() method.
+        $this->nom = $nom;
+        $this->prenom = $prenom;
+        $this->tel = $tel;
+        $this->dateDeNaissance = $dateDeNaissance;
+        $this->age = $age;
     }
 
     public function envoyerEmail(string $message): void
@@ -40,47 +30,75 @@ class Personne implements IPersonne
         // TODO: Implement envoyerSMS() method.
     }
 
+    /**
+     * @return mixed
+     */
     public function getNom(): string
     {
-        // TODO: Implement getNom() method.
-        return "";
+        return $this->nom;
     }
 
+    /**
+     * @param mixed $nom
+     */
     public function setNom(string $nom): void
     {
-        // TODO: Implement setNom() method.
+        $this->nom = $nom;
     }
 
+    /**
+     * @return mixed
+     */
     public function getPrenom(): string
     {
-        // TODO: Implement getPrenom() method.
-        return "";
+        return $this->prenom;
     }
 
+    /**
+     * @param mixed $prenom
+     */
     public function setPrenom(string $prenom): void
     {
-        // TODO: Implement setPrenom() method.
+        $this->prenom = $prenom;
     }
 
+    /**
+     * @return mixed
+     */
     public function getTel(): string
     {
-        // TODO: Implement getTel() method.
-        return "";
+        return $this->tel;
     }
 
+    /**
+     * @param mixed $tel
+     */
     public function setTel(string $tel): void
     {
-        // TODO: Implement setTel() method.
+        $this->tel = $tel;
     }
 
-    public function getMail(): string
+    /**
+     * @return mixed
+     */
+    public function getDateDeNaissance(): \DateTime
     {
-        // TODO: Implement getMail() method.
-        return "";
+        return $this->dateDeNaissance;
     }
 
-    public function setMail(string $mail): void
+    /**
+     * @param mixed $dateDeNaissance
+     */
+    public function setDateDeNaissance(\DateTime $dateDeNaissance): void
     {
-        // TODO: Implement setMail() method.
+        $this->dateDeNaissance = $dateDeNaissance;
+    }
+
+    /**
+     * @return int
+     */
+    public function getAge(): int
+    {
+        return $this->age;
     }
 }

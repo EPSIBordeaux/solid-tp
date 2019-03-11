@@ -6,10 +6,10 @@ namespace ISP;
 class Calendar
 {
 
-    /** @var IPersonne[] $personnes */
+    /** @var IBasicPersonne[] $personnes */
     public $personnes;
 
-    public function addPersonne(IPersonne $personne)
+    public function addPersonne(IBasicPersonne $personne)
     {
 
     }
