@@ -2,14 +2,16 @@
 
 namespace LSP;
 
-class Oiseau
+class Oiseau implements IManger, IVoler
 {
 
-    public function manger() {
+    public function manger()
+    {
         echo "Je suis un oiseau et je mange";
     }
 
-    public function voler() {
+    public function voler()
+    {
         echo "Je suis un oiseau et je vole";
     }
 }
