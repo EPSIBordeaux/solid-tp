@@ -2,7 +2,7 @@
 
 namespace LSP;
 
-class Canari implements IManger, IVoler
+class Canari extends Oiseau implements IVoler
 {
 
     public function manger()

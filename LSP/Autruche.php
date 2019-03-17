@@ -2,7 +2,7 @@
 
 namespace LSP;
 
-class Autruche implements IManger
+class Autruche extends Oiseau
 {
 
     public function manger()
