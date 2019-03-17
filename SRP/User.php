@@ -2,7 +2,7 @@
 
 namespace SRP;
 
-class User extends People implements IUserInteraction
+class User extends People
 {
 
     private $guid;
@@ -13,15 +13,6 @@ class User extends People implements IUserInteraction
         $this->guid = $guid;
     }
 
-    public function isGraduated()
-    {
-        return false;
-    }
-
-    public function calculateAverage()
-    {
-        return 0;
-    }
 
     /**
      * @return mixed

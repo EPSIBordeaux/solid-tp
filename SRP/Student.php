@@ -2,7 +2,7 @@
 
 namespace SRP;
 
-interface IUserInteraction
+class Student extends User
 {
 
     /**
@@ -11,12 +11,18 @@ interface IUserInteraction
      *
      * @return boolean
      */
-    public function isGraduated();
+    public function isGraduated()
+    {
+        return false;
+    }
 
     /**
      * Calcul en fonction des notes de l'étudiants, application de regles métiers (notes éliminatoires, etc...
      *
      * @return float
      */
-    public function calculateAverage();
+    public function calculateAverage()
+    {
+        return 0;
+    }
 }
