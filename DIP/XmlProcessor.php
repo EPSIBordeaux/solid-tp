@@ -14,6 +14,7 @@ abstract class XmlProcessor implements IXmlProcessor
 
     public function process(): void
     {
-        // TODO: Implement process() method.
+        $data = $this->getData();
+        // TODO process
     }
 }
