@@ -5,8 +5,8 @@ namespace LSP;
 class Autruche extends Oiseau
 {
 
-    public function voler()
+    public function manger()
     {
-        throw new \Error("Une autruche ne vole pas !");
+        echo "Je suis une autruche et je mange";
     }
 }
